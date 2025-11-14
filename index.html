@@ -4,152 +4,146 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NA VISUALS | Visual Designer</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
-<body>
 
+<body>
+  
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">NA Visuals</div>
-    
-    <ul>
+
+    <ul class="nav-links">
       <li><a href="#about">About</a></li>
-      <li><a href="#featured-project">Project</a></li> 
+      <li><a href="#featured-project">Project</a></li>
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+
+    <div class="hamburger">
+      <i class="fa-solid fa-bars"></i>
+    </div>
   </nav>
 
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="#about">About</a>
+    <a href="#featured-project">Project</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+
+  <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
-      <h1 data-animation="fade-slide-up" data-delay="0.2s">Hi, I’m Nikhil</h1>
-      <p data-animation="fade-slide-up" data-delay="0.4s">A visual designer who blends creativity and strategy to craft designs that connect emotionally and communicate clearly.</p>
-      <a href="#featured-project" class="hero-btn" data-animation="fade-bounce" data-delay="0.6s">View My Work</a> 
+      <h1 data-animation="fade-slide-up" data-delay="0.1s">Hi, I’m Nikhil</h1>
+      <p data-animation="fade-slide-up" data-delay="0.2s">A visual designer who blends creativity and strategy to craft designs that connect emotionally and communicate clearly.</p>
+      <a href="#featured-project" class="hero-btn" data-animation="fade-bounce" data-delay="0.3s">View My Work</a> 
     </div>
+
+    <!-- Background Video -->
     <video autoplay muted loop id="bg-video">
       <source src="placeholder.mp4" type="video/mp4">
     </video>
-    <div class="particle-js" id="particles-js"></div> 
+
+    <!-- Particles -->
+    <div id="particles-js"></div>
   </section>
 
-  <section id="about" class="about" data-animation="scroll-fade-up">
+
+  <!-- ABOUT -->
+  <section id="about" class="section glass">
     <h2 data-animation="scroll-fade-up">About Me</h2>
-    <p data-animation="scroll-fade-up" data-delay="0.2s">I’m a graphic designer based in Hyderabad, crafting visuals that blend minimal design with cinematic storytelling. I create frames that don’t just look good — they feel something. Each project I take on is built around mood, emotion, and clarity.</p>
-    
-    <h3 data-animation="scroll-fade-up" data-delay="0.3s">My Philosophy</h3>
-    <p class="philosophy" data-animation="scroll-fade-up" data-delay="0.4s">
-      Design, to me, is a language — quiet, intentional, and powerful. Every colour, line, and texture has meaning. My work focuses on branding, posters, and digital design, balancing simplicity with visual drama to tell stories that stay with people.
+    <p data-animation="scroll-fade-up" data-delay="0.1s">
+      I’m a graphic designer based in Hyderabad, crafting visuals that blend minimal design with cinematic storytelling.
     </p>
 
-    <h3 data-animation="scroll-fade-up" data-delay="0.5s">Tools & Skills</h3>
-    <div class="tools-list" data-animation="scroll-fade-up" data-delay="0.6s">
-      <p><span class="tool-item">Photoshop</span> &nbsp;•&nbsp; <span class="tool-item">Illustrator</span> &nbsp;•&nbsp; <span class="tool-item">After Effects</span> &nbsp;•&nbsp; <span class="tool-item">Darktable</span> &nbsp;•&nbsp; <span class="tool-item">Canva</span> &nbsp;•&nbsp; <span class="tool-item">Premiere Pro</span></p>
+    <h3 data-animation="scroll-fade-up">My Philosophy</h3>
+    <p class="philosophy" data-animation="scroll-fade-up" data-delay="0.1s">
+      Design, to me, is a language — quiet, intentional, and powerful.
+    </p>
+
+    <h3 data-animation="scroll-fade-up">Tools & Skills</h3>
+    <div class="tools-list" data-animation="scroll-fade-up" data-delay="0.1s">
+      <p>
+        Photoshop • Illustrator • After Effects • Darktable • Canva • Premiere Pro
+      </p>
     </div>
   </section>
 
-  <section id="featured-project" class="featured-projects" data-animation="scroll-fade-up"> 
-    <h2 data-animation="scroll-fade-up">Featured Project</h2> 
+
+  <!-- FEATURED PROJECT -->
+  <section id="featured-project" class="section glass">
+    <h2 data-animation="scroll-fade-up">Featured Project</h2>
     
-    <div class="case-study-card" data-animation="scroll-fade-up" data-delay="0.2s">
+    <div class="case-study-card" data-animation="scroll-fade-up">
       
       <div class="case-study-img">
-        <img src="images/your-poster-name.png" alt="Cinematic Film Poster">
+        <img src="images/your-poster-name.png" alt="Cinematic Film Poster" loading="lazy">
       </div>
-      
+
       <div class="case-study-content">
         <h3>Cinematic Film Poster Concept</h3>
-        <p>This concept film poster tells a story in a single frame — a blend of royalty, betrayal, and emotion. Using warm orange and golden tones, I created a cinematic balance between beauty and tension. Every layer was designed to merge story and atmosphere, revealing drama through simplicity. The final piece blends light, mood, and symbolism into one image — minimal yet powerful. Viewers connected with its storytelling depth, calling it a visual that speaks without words.</p>
+        <p>
+          This concept film poster tells a story in a single frame — a blend of royalty, betrayal, and emotion.
+        </p>
       </div>
     </div>
-    
   </section>
 
-  <section id="gallery" class="gallery-work" data-animation="scroll-fade-up">
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section glass">
     <h2 data-animation="scroll-fade-up">Other Works</h2>
-    
-    <div class="category">
-      <h3 data-animation="scroll-fade-up" data-delay="0.1s">Logos</h3>
-      <div class="grid" data-animation="scroll-fade-up">
-        <div class="item"><img src="images/logo1.png" alt="Logo 1"></div>
-        <div class="item"><img src="images/logo2.png" alt="Logo 2"></div>
-        <div class="item"><img src="images/logo3.png" alt="Logo 3"></div>
-        <div class="item"><img src="images/logo4.png" alt="Logo 4"></div>
-        <div class="item"><img src="images/logo5.png" alt="Logo 5"></div>
-        <div class="item"><img src="images/logo6.png" alt="Logo 6"></div>
-      </div>
-    </div>
-    
-    <div class="category">
-      <h3 data-animation="scroll-fade-up" data-delay="0.1s">Posters</h3>
-      <div class="grid" data-animation="scroll-fade-up">
-        <div class="item"><img src="images/poster1.png" alt="Poster 1"></div>
-        <div class="item"><img src="images/poster2.png" alt="Poster 2"></div>
-        <div class="item"><img src="images/poster3.png" alt="Poster 3"></div>
-        <div class="item"><img src="images/poster4.png" alt="Poster 4"></div>
-        <div class="item"><img src="images/poster5.png" alt="Poster 5"></div>
-        <div class="item"><img src="images/poster6.png" alt="Poster 6"></div>
-      </div>
-    </div>
-    
-    <div class="category">
-      <h3 data-animation="scroll-fade-up" data-delay="0.1s">Social Media Ads</h3>
-      <div class="grid" data-animation="scroll-fade-up">
-        <div class="item"><img src="images/ad1.png" alt="Ad 1"></div>
-        <div class="item"><img src="images/ad2.png" alt="Ad 2"></div>
-        <div class="item"><img src="images/ad3.png" alt="Ad 3"></div>
-        <div class="item"><img src="images/ad4.png" alt="Ad 4"></div>
-        <div class="item"><img src="images/ad5.png" alt="Ad 5"></div>
-        <div class="item"><img src="images/ad6.png" alt="Ad 6"></div>
-      </div>
-    </div>
 
-    <div class="category">
-      <h3 data-animation="scroll-fade-up" data-delay="0.1s">Thumbnails</h3>
-      <div class="grid" data-animation="scroll-fade-up">
-        <div class="item"><img src="images/thumbnail1.png" alt="Thumbnail 1"></div>
-        <div class="item"><img src="images/thumbnail2.png" alt="Thumbnail 2"></div>
-        <div class="item"><img src="images/thumbnail3.png" alt="Thumbnail 3"></div>
-        <div class="item"><img src="images/thumbnail4.png" alt="Thumbnail 4"></div>
-        <div class="item"><img src="images/thumbnail5.png" alt="Thumbnail 5"></div>
-        <div class="item"><img src="images/thumbnail6.png" alt="Thumbnail 6"></div>
-      </div>
+    <div class="grid">
+      <img src="images/logo1.png" loading="lazy">
+      <img src="images/logo2.png" loading="lazy">
+      <img src="images/poster3.png" loading="lazy">
+      <img src="images/ad1.png" loading="lazy">
+      <img src="images/ad2.png" loading="lazy">
+      <img src="images/thumbnail1.png" loading="lazy">
     </div>
   </section>
 
-  <section id="testimonials" class="testimonials" data-animation="scroll-fade-up">
+
+  <!-- TESTIMONIAL -->
+  <section id="testimonials" class="section glass">
     <h2 data-animation="scroll-fade-up">Testimonials</h2>
-    <div class="testimonial-box" data-animation="scroll-fade-up" data-delay="0.2s">
+    <div class="testimonial-box" data-animation="scroll-fade-up">
       <blockquote>
-        “Nikhil’s production logos and posters carry a cinematic depth that elevates every project. His sense of storytelling through visuals is exceptional — refined, emotional, and powerful.”
+        “Nikhil’s production logos and posters carry a cinematic depth that elevates every project.”
       </blockquote>
-      <cite>— Grishm Kumar, Content Creator</cite>
+      <cite>— Grishm Kumar</cite>
     </div>
   </section>
 
 
-  <section id="contact" class="contact" data-animation="scroll-fade-up">
-    <h2 data-animation="scroll-fade-up">Let’s create something remarkable together.</h2>
-    <p class="contact-sub" data-animation="scroll-fade-up" data-delay="0.2s">
-      I’m open for freelance projects, collaborations, or internships.
-    </p>
-    <div class="contact-icons" data-animation="scroll-fade-up" data-delay="0.4s">
-      <a href="mailto:nikhilarjun.1000@gmail.com" title="Email">
-        <i class="fa-solid fa-envelope"></i>
-      </a>
-      <a href="https://www.instagram.com/just_music66" target="_blank" title="Instagram">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
+  <!-- CONTACT -->
+  <section id="contact" class="section glass">
+    <h2 data-animation="scroll-fade-up">Let’s create something remarkable.</h2>
+    <p class="contact-sub">Open for freelance, collabs, internships.</p>
+
+    <div class="contact-icons">
+      <a href="mailto:nikhilarjun.1000@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://www.instagram.com/just_music66" target="_blank"><i class="fa-brands fa-instagram"></i></a>
     </div>
   </section>
 
+
+  <!-- Footer -->
   <footer>
     <p>You’ve got great taste 😉</p>
   </footer>
 
-  <button id="scrollTop" title="Go to top">↑</button>
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> 
+  <button id="scrollTop">↑</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
   <script src="script.js"></script>
+
 </body>
 </html>
